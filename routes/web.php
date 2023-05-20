@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FakultasController;
+use App\Http\Controllers\ProdiController;
 use App\Http\Controllers\ProvinsiController;
 use Illuminate\Support\Facades\Route;
 
@@ -58,3 +59,5 @@ Route::get('/jadwal', function () {
 Route::resource('fakultas', FakultasController::class);
 
 Route::resource('provinsi', ProvinsiController::class);
+
+Route::resource('prodi', ProdiController::class);
